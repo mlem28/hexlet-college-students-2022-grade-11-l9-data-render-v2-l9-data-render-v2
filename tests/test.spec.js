@@ -36,9 +36,9 @@ test('step3', async ({ page }) => {
   const options = await page.locator('select option').allTextContents();
   await expect(options).toEqual([
     'Все',
-    'Московская',
-    'Арбат',
+    'Арбатская',
     'Александровский сад',
+    'Московская',
     'Парк Культуры',
     'Театральная',
   ]);
